@@ -1,6 +1,6 @@
 html, body {
-	background-image: url("Images\\Background2.jpg");
-	background-size: 100%;
+	background-image: url("Images\\Background.jpg");
+	background-size: 100% auto;
 	margin: 0;
 	overflow-x: hidden;
 	font-family: Arial Rounded MT;
@@ -12,6 +12,16 @@ li {
 
 header {
 	font-size: 22px;
+}
+
+.image {
+	transition: transform 0.7s;
+}
+
+.image:hover {
+	-ms-transform: scale(1.07); /* IE 9 */
+  	-webkit-transform: scale(1.07); /* Safari 3-8 */
+  	transform: scale(1.07);
 }
 
 .allElements {
@@ -84,24 +94,27 @@ footer {
 	color: #db5c6f;
 }
 
+
+.fb_link, .insta_links, .YT_links {
+	transition: transform .3s;
+}
+
+
+
 .fb_link:hover {
-	background-image: url("Images\\icons\\fb_iconHighlight.png");
-	background-size: 50%;
-	height:40px;
-	width: 45px;
+	-ms-transform: scale(1.5); /* IE 9 */
+  	-webkit-transform: scale(1.5); /* Safari 3-8 */
+  	transform: scale(1.5);
 }
 
 .insta_links:hover {
-	background-image: url("Images\\icons\\instagram_iconHighlight.png");
-	background-size:  50%;
-	height:40px;
-	width: 45px;
+	-ms-transform: scale(1.5); /* IE 9 */
+  	-webkit-transform: scale(1.5); /* Safari 3-8 */
+  	transform: scale(1.5);
 }
 
 .YT_links:hover {
-	display: inline;
-	background-image: url("Images\\icons\\YouTube_iconHighlight.png");
-	background-size: 50%;
-	height:40px;
-	width: 45px;
+	-ms-transform: scale(1.5); /* IE 9 */
+  	-webkit-transform: scale(1.5); /* Safari 3-8 */
+  	transform: scale(1.5);
 }
