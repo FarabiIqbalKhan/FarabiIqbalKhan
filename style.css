@@ -1,4 +1,4 @@
-html, body {
+body {
 	background-image: url("Images\\Background.jpg");
 	background-size: 100% auto;
 	margin: 0;
@@ -25,7 +25,7 @@ header {
 }
 
 .allElements {
-	position: absolute;
+	position: relative;
 	width: 80%;
 	margin-top: 50px;
 	margin-left: 50%;
@@ -61,11 +61,11 @@ hr {
 	position: absolute;
 }
 
-.button {
+.contact-button {
 	background-image: linear-gradient(to right, #FF5F6D 0%, #FFC371  51%, #FF5F6D  100%)
 }
 
-.button {
+.contact-button {
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -77,21 +77,10 @@ hr {
     border-radius: 50px;
 }
 
-.button:hover {
+.contact-button:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
-}
-
-
-footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	height: 15%;
-	background: transparent;
-	text-align: center;
-	color: #db5c6f;
 }
 
 
@@ -117,4 +106,71 @@ footer {
 	-ms-transform: scale(1.5); /* IE 9 */
   	-webkit-transform: scale(1.5); /* Safari 3-8 */
   	transform: scale(1.5);
+}
+
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+
+		/* Modal Content/Box */
+.modal-content {
+  	background-image: url("Images\\Background.jpg");
+  	background-size: 50%;
+  	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  	border: 1px solid #888;
+  	width: 50%; /* Could be more or less, depending on screen size */
+  }
+
+.backbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: light-grey;
+}
+
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+
+@-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+	  
+@keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+	  	font-color: white;
+		display: block;
+		float: none;
+	}
+	.backbtn {
+	    width: 100%;
+	}
+}
+
+
+.formInput {
+  	width: 100%;
+  	padding: 12px 20px;
+ 	margin: 8px 0;
+	display: inline-block;
+  	border: 1px solid #ccc;
+  	box-sizing: border-box;
 }
