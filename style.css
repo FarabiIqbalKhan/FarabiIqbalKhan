@@ -62,7 +62,8 @@ hr {
 }
 
 .contact-button {
-	background-image: linear-gradient(to right, #FF5F6D 0%, #FFC371  51%, #FF5F6D  100%)
+	background-image: linear-gradient(to right, #FF5F6D 0%, #FFC371  51%, #FF5F6D  100%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-button {
@@ -88,10 +89,13 @@ hr {
 	transition: transform .3s;
 }
 
-
+.formInput {
+		height: 40%;
+		width: 30%;
+}
 
 .fb_link:hover {
-	-ms-transform: scale(1.5); /* IE 9 */
+		-ms-transform: scale(1.5); /* IE 9 */
   	-webkit-transform: scale(1.5); /* Safari 3-8 */
   	transform: scale(1.5);
 }
@@ -129,9 +133,13 @@ hr {
   	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   	border: 1px solid #888;
   	width: 50%; /* Could be more or less, depending on screen size */
+		height: 50%;
   }
 
+
+
 .backbtn {
+	margin-bottom: 0;
 	width: auto;
 	padding: 10px 18px;
 	background-color: light-grey;
@@ -144,19 +152,19 @@ hr {
 
 
 @-webkit-keyframes animatezoom {
-	from {-webkit-transform: scale(0)} 
+	from {-webkit-transform: scale(0)}
 	to {-webkit-transform: scale(1)}
 }
-	  
+
 @keyframes animatezoom {
-	from {transform: scale(0)} 
+	from {transform: scale(0)}
 	to {transform: scale(1)}
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
 	span.psw {
-	  	font-color: white;
+	  font-color: white;
 		display: block;
 		float: none;
 	}
@@ -166,11 +174,10 @@ hr {
 }
 
 
-.formInput {
+#formInput {
   	width: 100%;
-  	padding: 12px 20px;
- 	margin: 8px 0;
-	display: inline-block;
+ 		margin: 8px 0;
+		display: inline-block;
   	border: 1px solid #ccc;
   	box-sizing: border-box;
 }

@@ -38,9 +38,22 @@
 			font-size: 18px;
 		}
 
+		.backbtn {
+			border-radius: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
 		.image {
 			 height:400px;
 			 width: 400px;
+		}
+
+		.mesCon {
+			background-color:#db5c6f;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 7%;
 		}
 
 		#footer {
@@ -136,7 +149,7 @@
 		}
 
 
-		@media (max-width: 450px) {
+		@media (max-width: 500px) {
 			body {
 				background-size: auto;
 				overflow: scroll;
@@ -145,31 +158,95 @@
 			li {
 				margin: auto;
 				width: 80%;
+				font-size: 17px;
 			}
 
 			.Name-title {
-				font-size: 50px;
+				font-family: Great Vibes;
+				font-size: 35px;
 			}
 
 			.About-Me {
-				font-size: 20px;
+				font-size: 15px;
+				padding-top: 10px;
+				padding-left: 5px;
+				padding-right: 5px;
+				padding-bottom: 10px;
+				border: 1.5px solid darkred;
+				border-radius: 10px;
+			}
+
+			.contact-button {
+				font-size: 16px;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+
+			.cnt_btn {
+				width: 200px;
+				position: absolute;
+				margin-top: 310px;
+				margin-left: 0%;
+				font-size: 16px;
+				padding-left: 5px;
+				padding-right: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+
+			.sndbtn {
+				font-size: 18px;
+				padding-left: 14px;
+				padding-right: 14px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+
 			}
 
 			.image {
-				 height:300px;
-				 width: 300px;
+				margin-top: 40px;
+				 height:270px;
+				 width: 270px;
 			}
 
 			.main-block {
 				text-align: center;
 			}
 
+			label {
+				font-size: 16px;
+			}
+
+			.modal-content {
+			  	background-image: url("Images\\Background.jpg");
+			  	background-size: 50%;
+			  	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+			  	border: 1px solid #888;
+			  	width: 80%; /* Could be more or less, depending on screen size */
+					height: 50%;
+			  }
+
+
+			.mesCon {
+				margin-top: 25%;
+			}
+
+			#formInput {
+			  	width: 100%;
+			 		margin: 8px 0;
+					display: inline-block;
+			  	border: 1px solid #ccc;
+			  	box-sizing: border-box;
+				}
+
 			#footer {
-				margin-top: 15%;
-				margin-bottom: 10%;
+				margin-top: 20%;
+				margin-bottom: 7%;
 				position: relative;
 				background: transparent;
-				font-size: 25px;
+				font-size: 20px;
 				text-align: center;
 				color: #db5c6f;
 			}
@@ -212,7 +289,7 @@
 				<h1 class="Name-title"><b>Farabi Iqbal Khan</b></h1>
 				<p class="About-Me">Hello Everyone! Welcome to my website. I am  refgd fgdfg fgdfgg ggg tehet egj eg eigjetio g eiteithj ithwthjeit he t wrth ekilkfngne rrgwengoieg   rgionvlgqelkr grigwrgeongoieqng rgiorngegoie rgmofenthie </p>
 
-				<button class="contact-button" onclick="document.getElementById('id01').style.display='block'">Contact Me via Email</button>
+				<button class="contact-button cnt_btn" onclick="document.getElementById('id01').style.display='block'">Contact Me via Email</button>
 			</div>
 
 			<div class="col-sm-6 image-column">
@@ -243,11 +320,11 @@
 
 			<div class="container">
 				<label for="mes"><b>Enter a message for me</b></label>
-				<input class="formInput" type="text" placeholder="Enter Message anonymous" name="mes" required>
+				<textarea id = "formInput" type="text"name="message" rows="8" cols="50"></textarea><br>
 
-				<button class="contact-button" type="submit">Send</button>
+				<button class="contact-button sndbtn" type="submit">Send</button>
 			</div>
-			<div class="container" style="background-color:#1c1c1c;">
+			<div class="container mesCon">
 				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="backbtn">Back</button>
 			</div>
 		</form>
